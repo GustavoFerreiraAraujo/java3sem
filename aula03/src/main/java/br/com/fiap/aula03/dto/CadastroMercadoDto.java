@@ -1,12 +1,9 @@
 package br.com.fiap.aula03.dto;
 
 import br.com.fiap.aula03.model.CategoriaMercado;
+import br.com.fiap.aula03.dto.DetalhesMercadoDto;
 
-public record CadastroMercadoDto(String nome, CategoriaMercado categoria,string cnpj, Double faturamento) {
 
-}
+public record CadastroMercadoDto(String nome, CategoriaMercado categoria,String cnpj, Double faturamento) {
 
-public DetalhesMercaoDto(Mercado mercado){
-
-    this(mercado.getId(),mercado.getName().mercado.getCategoria(),mercado.getCnpj(),mercado.getFaturamento());
-}
+};
